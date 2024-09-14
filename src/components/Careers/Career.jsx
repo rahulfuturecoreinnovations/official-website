@@ -40,7 +40,7 @@ const Career = () => {
             </div>
           </div>
         </div>
-        <div id="jobs">
+        {/* <div id="jobs">
           <div className="row">
             <div className="col-lg-4 col-md-6">
               <div className="job-inner">
@@ -117,7 +117,7 @@ const Career = () => {
               </div>
             </div>
           </div>
-        </div>
+        </div> */}
       </div>
     </div>
   );
