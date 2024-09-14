@@ -1,0 +1,131 @@
+.main-container{
+    background:  linear-gradient(#1F3170, rgb(31 31 31 / 89%)), url('../media/main-bg.png') center;
+}
+
+
+#container h1, .work-section h1{
+    background: no-repeat center url("../media/bbblurry.svg");
+}
+
+.relative h1{
+    background: no-repeat url("../media/bbblurry.svg");
+}
+
+.review-section{
+    padding: 50px;
+    margin: 40px 0px;
+    background:  linear-gradient(#1F3170, rgb(31 31 31 / 89%)), url('../media/review-bg.jpg') center;
+}
+
+.review-section h1{
+    color: white;
+    font-size: 3rem;
+    margin: 10px 0px;
+    font-weight: 700;
+    background-image: url('../media/bbblurry.svg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.box-con-container {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .box-con-single {
+    margin-bottom: 20px; 
+  }
+  
+  .box-con-multiple {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  @media (min-width: 1024px) {
+    .box-con-container {
+      flex-direction: row;
+    }
+  
+    .box-con-single {
+      margin-bottom: 0;
+    }
+  
+    .box-con-multiple {
+      flex-direction: column;
+      width: calc(100% - 200px); 
+    }
+  }
+
+  
+  @keyframes slideIn {
+    0% {
+      transform: translateX(-100%);
+      opacity: 0;
+    }
+    100% {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+  
+  .animate-slideIn {
+    animation: slideIn 0.5s ease-out forwards;
+  }
+  
+  .delay-1 { animation-delay: 0.1s; }
+  .delay-2 { animation-delay: 0.2s; }
+  .delay-3 { animation-delay: 0.3s; }
+  .delay-4 { animation-delay: 0.4s; }
+  
+  @keyframes dropFromTop {
+    from {
+      opacity: 0;
+      transform: translateY(-100px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  .drop-from-top {
+    animation: dropFromTop 0.3s ease-out forwards;
+  }
+  
+  @keyframes slideFromLeft {
+    from {
+      opacity: 0;
+      transform: translateX(-100%);
+    }
+    to {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+  
+  .slide-from-left {
+    animation: slideFromLeft 0.5s ease-out forwards;
+  }
+  
+  @keyframes drop {
+    from {
+      transform: translateY(-50px);
+      opacity: 0;
+    }
+    to {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+  
+  .faq-item {
+    opacity: 0;
+    transform: translateY(-50px);
+    transition: opacity 0.5s ease-out, transform 0.5s ease-out;
+  }
+  
+  .faq-item.drop {
+    animation: drop 0.5s forwards;
+  }
+  

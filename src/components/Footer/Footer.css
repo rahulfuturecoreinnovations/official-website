@@ -1,0 +1,132 @@
+#footer {
+    padding: 50px 20px; /* Reduced padding to eliminate extra height */
+    background: linear-gradient(270deg, #010515 0%, #051a3c 100%);
+}
+
+#footer .row {
+    max-width: 1300px;
+    margin: 0 auto;
+    color: white;
+    display: flex;
+    flex-wrap: wrap; /* Ensures content wraps on smaller screens */
+}
+
+.footer-inner {
+    margin-right: 50px;
+    flex: 1; /* Allows the inner content to be flexible */
+}
+
+.footer-inner img {
+    margin: 0;
+}
+
+.footer-inner .location {
+    margin-top: 30px !important;
+}
+
+#footer h4 {
+    font-weight: 600;
+    font-size: 1.7rem;
+    margin: 20px 0 40px 0;
+    color: white;
+}
+
+#footer ul {
+    padding: 0;
+    margin: 0;
+    list-style-type: none; /* Ensures no default list styling */
+}
+
+#footer p {
+    margin: 10px 0;
+    color: #b1b1b1;
+    font-size: 15px;
+}
+
+#footer ul li {
+    margin: 10px 0;
+}
+
+#footer a {
+    text-decoration: none;
+    color: #b1b1b1;
+    transition: color 200ms;
+}
+
+#footer a:hover {
+    color: #ddd;
+}
+
+.new-in input {
+    width: 100%;
+    margin: 20px 0;
+    padding: 7px 20px;
+    border-radius: 5px;
+    border: none;
+}
+
+.new-in input:focus {
+    outline: 1px solid #1F3170;
+}
+
+.new-in input::placeholder {
+    font-size: 14px;
+    color: #585555;
+}
+
+.email button {
+    background-color: #00e89c;
+    border: none;
+    font-size: 14px;
+    color: black;
+    padding: 7px 40px;
+    border-radius: 5px;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    #footer {
+        padding: 40px 20px;
+    }
+
+    #footer h4 {
+        font-size: 1.2rem;
+        margin-bottom: 20px;
+    }
+
+    #footer ul li {
+        margin: 10px 0;
+        font-size: 13px;
+    }
+
+    .footer-inner {
+        margin-bottom: 30px; /* Adds space between columns on smaller screens */
+    }
+
+    .email {
+        margin-top: 30px;
+    }
+
+    .new-in input,
+    .email button {
+        width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    #footer .row {
+        flex-direction: column; /* Stacks items vertically on small screens */
+    }
+
+    #footer h4 {
+        text-align: center;
+    }
+
+    #footer ul {
+        text-align: center;
+    }
+
+    .email {
+        text-align: center;
+    }
+}

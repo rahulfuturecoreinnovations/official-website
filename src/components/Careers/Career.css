@@ -1,0 +1,354 @@
+.main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+#mail {
+    text-align: center;
+}
+
+#mail p {
+    font-size: 13px;
+    color: #696969;
+}
+
+#mail h4 {
+    font-weight: 600;
+    font-size: 1.3rem;
+}
+
+#mail a {
+    text-decoration: none;
+    color: black;
+}
+
+#careers, #mail {
+    max-width: 1140px;
+    margin: 40px auto;
+    border-radius: 10px;
+    background-color: white;
+    padding: 20px;
+}
+
+#careers h2 {
+    font-size: 1.8rem;
+    font-weight: 600;
+    color: #03103D;
+}
+
+.option-filter span {
+    margin: 0px 10px;
+}
+
+.option-filter .job-in {
+    position: relative;
+    background-color: rgb(234, 234, 234);
+    margin: 30px 20px;
+    border-radius: 5px;
+}
+
+.option-filter .job-in i {
+    position: absolute;
+    top: 13px;
+    left: 20px;
+    font-size: 17px;
+}
+
+.option-filter input::placeholder {
+    color: #696969;
+    font-size: 15px;
+}
+
+.Category i, .filter i {
+    position: absolute;
+    top: 0px;
+    right: 15px;
+}
+
+select {
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    padding: 5px;
+    font-size: 14px;
+}
+
+select:focus {
+    outline: 1px solid rgb(101, 101, 101);
+}
+
+.option-filter select {
+    padding: 8px 30px 8px 20px;
+    background-color: rgb(234, 234, 234);
+    border: none;
+    color: #2d2d2d;
+    font-size: 15px;
+    border-radius: 5px;
+    position: relative;
+}
+
+.option-filter option {
+    color: #696969;
+    font-size: 15px;
+}
+
+.option-filter .job-in .search-icon {
+    position: absolute;
+    top: 50%;
+    left: 10px;
+    transform: translateY(-50%);
+    font-size: 17px;
+    color: #999;
+}
+
+.option-filter input {
+    width: calc(100% - 40px);
+    border: none;
+    background: transparent;
+    padding: 8px 20px 8px 40px;
+    border-radius: 10px;
+}
+
+.Category .fa-caret-down, .filter .fa-caret-down {
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+    font-size: 15px;
+    color: #999;
+}
+
+#n-open {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 10px;
+    text-align: center;
+}
+
+#n-open h1 {
+    margin: 20px 0px;
+    font-size: 2rem;
+    font-weight: 600;
+    color: #03103D;
+}
+
+#n-open p {
+    color: #696969;
+    font-size: 14px;
+    font-weight: 400;
+    max-width: 600px;
+    margin: 10px auto;
+}
+
+#n-open button {
+    margin: 10px 0px;
+    background-color: transparent;
+    border: none;
+}
+
+#n-open button a {
+    margin: 10px 0px;
+    background-color: #03103D;
+    border: none;
+    padding: 8px 40px;
+    border-radius: 5px;
+    border: 2px solid #03103D;
+    cursor: pointer;
+    transition: all 200ms;
+    font-size: 14px;
+}
+
+#n-open button a:hover {
+    background-color: #ffffff;
+    color: #000000;
+}
+
+#n-open a {
+    text-decoration: none;
+    font-size: 15px;
+    color: white;
+}
+
+.n-op-img {
+    height: 150px;
+    margin: 10px auto;
+    text-align: center;
+}
+
+#jobs {
+    max-width: 1140px;
+    margin: 20px auto;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.job-inner {
+    padding: 30px;
+    background-color: white;
+    margin: 20px 0px;
+    border-radius: 5px;
+    box-shadow: 0 8px 46px 0 rgba(3, 15, 39, .04);
+}
+
+.job-inner h2 {
+    color: #ff5b2e;
+    font-size: 1.3rem;
+    margin: 5px 0px 30px 0px;
+    font-weight: 600;
+}
+
+.job-d {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 20px 0px;
+    gap: 120px;
+}
+
+.job-d p {
+    text-align: left;
+    font-size: 15px;
+    font-weight: 400;
+    color: #696969;
+}
+
+.job-d h4 {
+    font-size: 1rem;
+    font-weight: 600;
+    text-align: right;
+    color: #03103D;
+}
+
+.job-d button {
+    background-color: transparent;
+    border: none;
+}
+
+.job-d button a {
+    margin: 10px 0px;
+    background-color: #03103D;
+    border: none;
+    padding: 8px 20px;
+    border-radius: 5px;
+    border: 2px solid #03103D;
+    cursor: pointer;
+    transition: all 200ms;
+    font-size: 14px;
+}
+
+.job-d button a {
+    text-decoration: none;
+    font-size: 15px;
+    color: white;
+}
+
+.job-d button a:hover {
+    background-color: #ffffff;
+    color: #000000;
+}
+
+@media (max-width: 1024px) {
+    #careers, #mail, #jobs {
+        padding: 15px;
+        margin: 30px auto;
+    }
+
+    .job-d {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .job-d p, .job-d h4 {
+        text-align: center;
+    }
+}
+
+@media (max-width: 768px) {
+    .job-inner {
+        padding: 20px;
+    }
+
+    .option-filter .job-in {
+        margin: 20px 10px;
+    }
+
+    .Category, .filter {
+        margin: 10px;
+    }
+
+    #n-open h1 {
+        font-size: 1.5rem;
+    }
+
+    #n-open p {
+        font-size: 13px;
+    }
+
+    #n-open button a {
+        padding: 8px 30px;
+        font-size: 13px;
+    }
+
+    .n-op-img {
+        height: 120px;
+    }
+}
+
+@media (max-width: 425px) {
+    .option-filter span {
+        width: 100%;
+        display: block;
+        text-align: center;
+        margin-bottom: 10px;
+    }
+
+    .option-filter select {
+        width: 100%;
+        padding: 8px 20px;
+    }
+
+    .Category i, .filter i {
+        top: 11px;
+        right: 15px;
+    }
+
+    .job-inner {
+        padding: 15px;
+    }
+
+    .job-d {
+        gap: 10px;
+    }
+
+    .job-d p, .job-d h4 {
+        text-align: center;
+    }
+
+    #n-open h1 {
+        font-size: 1.3rem;
+    }
+
+    #n-open p {
+        font-size: 12px;
+    }
+
+    #n-open button a {
+        padding: 8px 20px;
+        font-size: 12px;
+    }
+
+    .n-op-img {
+        height: 100px;
+    }
+}
